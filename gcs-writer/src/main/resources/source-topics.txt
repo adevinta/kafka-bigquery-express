@@ -1,0 +1,6 @@
+# The list of topics to process.
+# Empty lines and lines starting with `#` are ignored.
+
+topic1
+topic2
+topic3

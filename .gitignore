@@ -1,0 +1,11 @@
+.metals/
+.bloop/
+.ammonite/
+.idea/
+.vscode/
+.bsp/
+.scala-build
+
+target/
+
+.DS_Store

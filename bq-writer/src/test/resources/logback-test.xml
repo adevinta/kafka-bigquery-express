@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <appender name="plain" class="ch.qos.logback.core.ConsoleAppender">
+        <immediateFlush>true</immediateFlush>
+        <encoder>
+            <pattern>%d %-5level [%thread] %logger{0}: %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Makes the unit test with EmbeddedKafka less chatty. -->
+    <logger name="kafka" level="ERROR"/>
+    <logger name="kafka.coordinator" level="ERROR"/>
+    <logger name="kafka.server.BrokerMetadataCheckpoint" level="ERROR"/>
+    <logger name="org.apache.kafka" level="ERROR"/>
+    <logger name="org.apache.zookeeper" level="ERROR"/>
+    <logger name="state.change.logger" level="WARN"/>
+    <!--    <logger name="org.apache.kafka.clients" level="INFO"/>-->
+
+    <root level="INFO">
+        <appender-ref ref="plain"/>
+    </root>
+</configuration>
