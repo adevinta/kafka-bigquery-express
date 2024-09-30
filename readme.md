@@ -6,6 +6,8 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 
 System to copy data from Kafka to BigQuery, safely and cost-effectively.
 
+![logo.png](logo.png)
+
 ## Features
 
 * Reads Avro messages using Confluent's 5-byte schema-id prefix convention from Kafka.
